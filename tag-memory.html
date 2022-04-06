@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('tag-memory',{
+        category: 'function',
+        color: '#9575cd',
+        defaults: {
+            name: {value:""},
+			filter: {value:1000},
+			outtopic: {value:""}
+			},
+        inputs:1,
+        outputs:1,
+        icon: "node_icon.png",
+        label: function() {
+            return this.name||"tag-memory";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="tag-memory">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+        <label for="node-input-filter"><i class="fa fa-tag"></i> Filter</label>
+        <input type="text" id="node-input-filter" placeholder="Filter">    </div>
+        <label for="node-input-outtopic"><i class="fa fa-tag"></i> Out Topic</label>
+        <input type="text" id="node-input-outtopic" placeholder="Out Topic"> 
+		</div>
+</script>
+
+<script type="text/html" data-help-name="tag-memory">
+    <p>Mantiene in memoria un payload</p>
+</script>
