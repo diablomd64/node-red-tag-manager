@@ -2,8 +2,8 @@
   "name": "node-red-contrib-tag-memory",
   "version": "1.0.0",
   "description": "Simple node that save in memory a payload from eth-ip nodes",
+  "repository": "git@github.com:diablomd64/node-red-tag-manager.git",
   "main": "tag-memory.js",
-  "repository": "git@github.com:diablomd64/node-red-tag-manager.git"
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
