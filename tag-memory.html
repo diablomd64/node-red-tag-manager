@@ -42,5 +42,23 @@
 </script>
 
 <script type="text/html" data-help-name="tag-memory">
-    <p>Mantiene in memoria un payload</p>
+  <p>Tag-Memory</p>
+  <p>The node consist in a single element buffer. It store the message from the input, sending at regular interval or by external trigger.</p>
+  <p>Parameters</h3>
+  <dl class="message-properties">
+    <dt>Self-Clock<span class="property-type">int</span></dt>
+    <dd>This property sets the internal clock timer in milliseconds.</dd>
+  </dl>
+  <dl class="message-properties">
+    <dt>Out Topic<span class="property-type">string</span></dt>
+    <dd>This property override the topic from the input message. If not set, input topic will get pass-through output.</dd>
+  </dl>
+  <dl class="message-properties">
+    <dt>Use External Clock<span class="property-type">bool</span></dt>
+    <dd>This property inhibith the internal timer, waiting for "External Clock Topic" to be received, to trigger msg output. "External Clock Topic" need to be defined.</dd>
+  </dl>
+  <dl class="message-properties">
+    <dt>External Clock Topic<span class="property-type">string</span></dt>
+    <dd>This property sets the topic that will be used as clock for triggering message send</dd>
+  </dl>
 </script>
